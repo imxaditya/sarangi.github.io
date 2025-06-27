@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,13 +81,11 @@
                   <div id="banner-text" class="col-md-12 text-c  ">
                      <div class="left-borders">
                         <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s"> One guiding principle : </p>
-                        <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s">Committed to upholding <br> justice with
-                           sincerity and diligence</h5>
+                        <h5 class="wow fadeInUp main-h" data-wow-delay="0.2s">Justice is the first virtue of social
+                           institutions, as truth is of systems of thought</h5>
                      </div>
-                     <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">Sarangi Legal is founded on
-                        values of integrity, responsibility, and respect for the rule of law. We approach each matter
-                        with careful attention and a deep sense of professional duty, striving to serve the legal needs
-                        of individuals and institutions with utmost care.</p>
+                     <p class="banner-text wow fadeInUp main-h3" data-wow-delay="0.8s">Sarangi Legal, Advocates and
+                        Consultants, your one stop solutions for all legal matters</p>
                   </div>
                   <!-- /#banner-text End -->
                </div>
@@ -169,7 +168,7 @@
                <h1 class="c_f pt-0">Why Us? </h1>
                <p class="about-bottom-s c_f wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"> At
                   Sarangi Legal, Advocates and Consultants, we are guided by <br> strong sense of professional duty and
-                  ethical commitment. <br>Clients choose to work with us not because of lofty promises, <br>but because
+                  ethical commitment. <br>Clients choose to work with us because
                   of the
                   values we uphold:
 
@@ -252,8 +251,10 @@
                   </div>
                   <h2 class="Practice">Intellectual Property Disputes
                   </h2>
-                  <p class="bottom-s">Handling of ownership, possession, title, and tenancy-related disputes, including
-                     partition suits and injunctions.
+                  <p class="bottom-s">We handle full range of Intellectual Property Disputes, from IP prosecution to IP
+                     litigation.
+
+
 
 
                   </p>
@@ -747,6 +748,34 @@
 
 
    </script>
+   <!-- Disclaimer Popup -->
+   <div id="disclaimerPopup"
+      style="position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:9999;display:flex;justify-content:center;align-items:center;">
+      <div style="max-width:600px;padding:30px;border:1px solid #ccc;background:#fefefe;text-align:center;">
+         <h2>DISCLAIMER</h2>
+         <p style="font-size:15px;line-height:1.6;">
+            As per the rules of the Bar Council of India, we are not permitted to solicit work or advertise. By clicking
+            "I Agree", you acknowledge that you are accessing this website to obtain information of your own accord and
+            that there has been no solicitation, advertisement, or inducement by Sarangi Legal, Advocates and
+            Consultants or its members.
+         </p>
+         <button onclick="acceptDisclaimer()" style="margin-top:20px;padding:10px 20px;">I Agree</button>
+      </div>
+   </div>
+
+   <script>
+      function acceptDisclaimer() {
+         document.getElementById('disclaimerPopup').style.display = 'none';
+         localStorage.setItem('disclaimerAccepted', 'true');
+      }
+
+      window.onload = function () {
+         if (localStorage.getItem('disclaimerAccepted') === 'true') {
+            document.getElementById('disclaimerPopup').style.display = 'none';
+         }
+      };
+   </script>
+
 </body>
 
 </html>
