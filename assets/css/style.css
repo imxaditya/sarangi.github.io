@@ -1227,9 +1227,9 @@ iframe {
   font-size: 20px;
   color: #a6acb7;
   line-height: 35px;
-  margin: 40px 0px;
+  /* margin: 40px 0px; */
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform:  ;
 }
 
 .bg_blue_img {
