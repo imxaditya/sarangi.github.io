@@ -537,6 +537,16 @@ dt {
   background-size: cover;
 }
 
+.service-banner-imgg {
+  background: rgba(255, 255, 255, 0);
+  background-image: url(../images/books.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .mb-90 {
   padding-bottom: 140px;
 
@@ -1229,7 +1239,7 @@ iframe {
   line-height: 35px;
   /* margin: 40px 0px; */
   font-weight: 500;
-  text-transform:  ;
+  text-transform:  capitalize;
 }
 
 .bg_blue_img {
@@ -3105,7 +3115,7 @@ h3.blog-title {
   }
 
   .who_we_area.col-md-6.col-sm-6.col-4pad.wow.fadeInUp {
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   .service-s {
