@@ -1,12 +1,5 @@
 /*----------------------------------------------------
-@File: Default Styles
-@Author: NavThemes
-@URL:https://www.navthemes.com
-@Version: Star Law Firm .01
 
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
 
 
 
@@ -538,6 +531,17 @@ dt {
 }
 
 .service-banner-imgg {
+  background: rgba(255, 255, 255, 0);
+  background-image: url(../images/books.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.service-banner-imggg {
   background: rgba(255, 255, 255, 0);
   background-image: url(../images/books.jpg);
   background-repeat: no-repeat;
@@ -2451,6 +2455,7 @@ ul {
   list-style: outside none none;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .blog-body h1 a {
